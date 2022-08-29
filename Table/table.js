@@ -27,6 +27,11 @@ addButton.addEventListener( 'click', () => {
         myTd2.textContent = nameInput.value;
         myTd3.textContent = semInput.value;
         myTd4.textContent = workInput.value;
+        nameInput.value = '';
+        semInput.value = '';
+        workInput.value = '';
+        
+        
         
         myTr.append(myTd1, myTd2, myTd3, myTd4)
         tableBody.append(myTr);
